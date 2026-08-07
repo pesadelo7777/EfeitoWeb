@@ -47,7 +47,9 @@ npx wrangler deploy --dry-run
 ```
 
 O `wrangler.jsonc` aponta para o Worker compilado e publica `dist/client` como
-assets estáticos. O projeto não utiliza D1 ou R2.
+assets estáticos. Arquivos correspondentes a `/assets/*` são servidos antes do
+Worker, enquanto páginas e rotas dinâmicas continuam sendo processadas pelo
+Vinext. O projeto não utiliza D1 ou R2.
 
 ## GitHub
 
